@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>hello.html</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Step04_Tooltip.html</title>
+<link rel="stylesheet" href="css/bootstrap.css"/>
+<title>hello.html</title>
 <body>
-<script type="text/javascript">
-		alert("안녕하세요!");
-</script>
+	<div class="container">
+		<h1>haeun Home</h1>
+		<p>안녕하세요<a href="#" id="htmlLink" title="화이또"> 김하은</a>입니다.으아 ㅜㅜㅜ</p>
+	</div>
+	<script src="js/jquery-3.2.0.js"></script>
+	<script src="js/bootstrap.js"></script>	
+	<script>		
+
+		$("#htmlLink").tooltip({
+			animation:true,
+			trigger:"focus hover",
+			placement: "bottom"
+		});
+
+	</script>
 </body>
 </head>
 </html> 
