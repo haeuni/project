@@ -1,10 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>hyunchang.html</title>
+<meta charset="UTF-8">
+<!-- IE 호환 모드 지원 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+<!-- 모바일 웹브라우져 대응 -->
+<meta name="viewport" content="width=device-width, initial-scale=1"/> 
+<title>hyunchang.html</title>
+<!-- bootstrap css 로딩 -->
+<link rel="stylesheet" href="css/bootstrap.css"/>
+<style>
+	/* index로 가는 버튼 css */
+	a{
+		text-decoration: none ;
+		color: white;
+	}
+	a:hover{
+		color:white;
+		text-decoration:none;
+		cursor:pointer;
+	}
+</style>
 </head>
 <body>
 	<h3>HI</h3>
+
+	<div class="container">
+	<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>번호</th>
+					<th>제목</th>
+					<th>작성자</th>
+					<th>날짜</th>
+					<th>조회수</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>123</td>
+					<td>만들라고 해서 만들었는데</td>
+					<td>박현창</td>
+					<td>2017.03.03</td>
+					<td>33</td>
+				</tr>
+				<tr>
+					<td>122</td>
+					<td>뭘 만들어야 할지</td>
+					<td>이유미</td>
+					<td>2017.02.02</td>
+					<td>22</td>
+				</tr>
+				<tr>
+					<td>121</td>
+					<td>모르겠다~~~</td>
+					<td>김하은</td>
+					<td>2017.01.01</td>
+					<td>11</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<hr/> <!-- 이건뭐여?? -->
+		<a class="btn btn-default pull-right">글쓰기</a>
+
+		<div class="text-center">
+			<ul class="pagination">
+				<li class="disabled"><a href="javascript:">&laquo;</a></li>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">&raquo;</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<button class="btn btn-primary pull-left"><a href="index.html">index page로</a></button>
+	
+
 </body>
+<!--   <div class="spacer"></div> -->
+<!-- Bootstrap 의 jquery 플러그인 기능 쓰기 위해 -->
+<script src="js/jquery-3.2.0.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+	
+</script>
 </html>
